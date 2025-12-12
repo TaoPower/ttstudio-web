@@ -295,16 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Project Data
     const projects = [
         {
-            id: 1,
-            title: "T - TEAM Cltoh",
-            subtitle: "Nguyễn Trí - All",
-            category: "Clothes Model",
-            group: "model",
-            badges: ["CD", "CAN", "Độc quyền"],
-            image: "assets/product1.png",
-            imagePlaceholder: "linear-gradient(135deg, #1c1c1c, #333)",
-            icon: "fa-shirt"
-        },
+----
     ];
 
     // State
@@ -856,3 +847,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
