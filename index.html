@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T - Team Studio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="floating-header">
+        <nav class="header-pill">
+            <div class="nav-links">
+                <a href="#home" class="active">Trang chủ</a>
+                <a href="#technical">Kỹ thuật</a>
+                <a href="#projects">Dự án</a>
+                <a href="#contact">Liên hệ</a>
+            </div>
+            <div class="header-separator"></div>
+            <div class="header-actions">
+                <div class="icon-btn" id="lang-toggle" title="Change Language">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <div class="icon-btn" id="theme-toggle" title="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </div>
+                <a href="https://discord.gg/CXCAQzH3k8" class="discord-pill">Discord</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>WELCOME<br>TO <br><span>T - Team</span></h1>
+                <p>Chào mừng đến với T - Team Studio – nơi hội tụ đam mê công nghệ! Được phát triển bởi team T - Team, chúng tôi mang đến giải pháp Custom Script, Car Decal, Model3D, Quần áo, Logo, Poster, Website, Quay dựng MV nền tảng FiveM và nhiều nội dung thú vị khác.</p>
+                <a href="https://discord.gg/CXCAQzH3k8" class="btn discord-btn"><i class="fa-brands fa-discord"></i> Tham gia Discord</a>
+            </div>
+            <div class="hero-logo">
+                <img src="assets/logo.png" alt="T - Team Big Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="technical" class="technical section-with-banner">
+        <div class="container">
+            <h2 class="section-title">Kỹ <span>thuật</span></h2>
+            <div class="tech-grid">
+                <div class="tech-card active" data-category="model">
+                    <div class="tech-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h3>Mô hình</h3>
+                    <p>Thiết kế mô hình 3D chất lượng cao</p>
+                </div>
+                <div class="tech-card" data-category="design">
+                    <div class="tech-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Thiết kế</h3>
+                    <p>Logo, Banner, UI/UX chuyên nghiệp</p>
+                </div>
+                <div class="tech-card" data-category="media">
+                    <div class="tech-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Truyền thông</h3>
+                    <p>Quay dựng MV, Media, Marketing</p>
+                </div>
+                <div class="tech-card" data-category="code">
+                    <div class="tech-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Lập trình</h3>
+                    <p>Website, Script FiveM, Discord Bot</p>
+                </div>
+            </div>
+            
+            <!-- Technical Details Panel -->
+            <div class="tech-details" id="tech-details">
+                <div class="tech-details-header">
+                    <h4 id="detail-title">Kỹ Thuật Mô hình</h4>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="tech-sub-grid" id="detail-items">
+                    <!-- Items injected via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-with-banner">
+        <div class="container">
+            <h2 class="section-title">Dự <span>án</span></h2>
+            
+            <!-- Dashboard Panel -->
+            <div class="dashboard-panel">
+                <div class="panel-header">
+                    <span class="panel-title">Danh mục</span>
+                    <button class="btn-mini-all" id="reset-all-cats">Tất cả</button>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="cat-card" data-group="model">
+                        <div class="cat-info">
+                            <h3>3D Model</h3>
+                            <span>0 sản phẩm</span>
+                        </div>
+                        <div class="cat-indicator"></div>
+                    </div>
+                    <div class="cat-card" data-group="design">
+                        <div class="cat-info">
+                            <h3>Design</h3>
+                            <span>0 sản phẩm</span>
+                        </div>
+                        <div class="cat-indicator"></div>
+                    </div>
+                    <div class="cat-card" data-group="script">
+                        <div class="cat-info">
+                            <h3>Script</h3>
+                            <span>0 sản phẩm</span>
+                        </div>
+                        <div class="cat-indicator"></div>
+                    </div>
+                    <div class="cat-card" data-group="media">
+                        <div class="cat-info">
+                            <h3>Media</h3>
+                            <span>0 sản phẩm</span>
+                        </div>
+                        <div class="cat-indicator"></div>
+                    </div>
+                </div>
+            <!-- Tools Grid (New Section) -->
+            <div class="tools-panel">
+                <div class="panel-header">
+                    <span class="panel-title">Công cụ & Ngôn ngữ</span>
+                </div>
+                <div class="tools-grid">
+                    <!-- VS Code -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/vscode.png" alt="VS Code"></div>
+                        <div class="tool-info">
+                            <h4>Visual Studio Code</h4>
+                            <span>Code Editor</span>
+                        </div>
+                    </div>
+                    <!-- React -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/reactjs.png" alt="React"></div>
+                        <div class="tool-info">
+                            <h4>React JS</h4>
+                            <span>Framework</span>
+                        </div>
+                    </div>
+                    <!-- Next JS -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/nextjs.png" alt="Next JS"></div>
+                        <div class="tool-info">
+                            <h4>Next JS</h4>
+                            <span>Framework</span>
+                        </div>
+                    </div>
+                    <!-- Tailwind -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/tailwind.png" alt="Tailwind"></div>
+                        <div class="tool-info">
+                            <h4>Tailwind CSS</h4>
+                            <span>Framework</span>
+                        </div>
+                    </div>
+                    <!-- JS -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/js.png" alt="JavaScript"></div>
+                        <div class="tool-info">
+                            <h4>Javascript</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <!-- Node -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/nodejs.png" alt="NodeJS"></div>
+                        <div class="tool-info">
+                            <h4>Node JS</h4>
+                            <span>Javascript Runtime</span>
+                        </div>
+                    </div>
+                    <!-- Github -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/github.png" alt="Github"></div>
+                        <div class="tool-info">
+                            <h4>Github</h4>
+                            <span>Repository</span>
+                        </div>
+                    </div>
+                    <!-- Figma -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/figma.png" alt="Figma"></div>
+                        <div class="tool-info">
+                            <h4>Figma</h4>
+                            <span>Design App</span>
+                        </div>
+                    </div>
+                    <!-- HTML -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/html.png" alt="HTML"></div>
+                        <div class="tool-info">
+                            <h4>HTML</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <!-- CSS -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/css.png" alt="CSS"></div>
+                        <div class="tool-info">
+                            <h4>CSS</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <!-- TypeScript -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/ts.png" alt="TypeScript"></div>
+                        <div class="tool-info">
+                            <h4>TypeScript</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <!-- Vite -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><img src="assets_tools/vite.png" alt="Vite"></div>
+                        <div class="tool-info">
+                            <h4>Vite</h4>
+                            <span>Framework</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Panel -->
+            <div class="filter-panel" id="filter-container">
+                <div class="filter-pills">
+                    <button class="pill active" data-filter="all">Tất cả</button>
+                    <button class="pill" data-parent="model" data-filter="Character Model">Character Model <span class="count">0</span></button>
+                    <button class="pill" data-parent="model" data-filter="Vehicle Model">Vehicle Model <span class="count">0</span></button>
+                    <button class="pill" data-parent="model" data-filter="Map Model">Map Model <span class="count">0</span></button>
+                    <button class="pill" data-parent="model" data-filter="Prop Model">Prop Model <span class="count">0</span></button>
+                    <button class="pill" data-parent="model" data-filter="Clothes Model">Clothes Model <span class="count">0</span></button>
+                    <button class="pill" data-parent="design" data-filter="Car Decals">Car Decals <span class="count">0</span></button>
+                    <button class="pill" data-parent="design" data-filter="Clothes Design">Clothes Design <span class="count">0</span></button>
+                </div>
+                <!-- Second row of filters for demo accuracy -->
+                <div class="filter-pills">
+                    <button class="pill" data-parent="design" data-filter="Logo / Poster / Banner">Logo / Poster / Banner <span class="count">0</span></button>
+                    <button class="pill" data-parent="script" data-filter="Server Customization">Server Customization <span class="count">0</span></button>
+                    <button class="pill" data-parent="script" data-filter="Feature Customization">Feature Customization <span class="count">0</span></button>
+                    <button class="pill" data-parent="script" data-filter="Tool Development">Tool Development <span class="count">0</span></button>
+                    <button class="pill" data-parent="media" data-filter="MV Production">MV Production <span class="count">0</span></button>
+                    <button class="pill" data-parent="media" data-filter="Video Editing">Video Editing <span class="count">0</span></button>
+                    <button class="pill" data-parent="media" data-filter="Photography">Photography <span class="count">0</span></button>
+                    <button class="pill" data-parent="media" data-filter="Streamer">Streamer <span class="count">0</span></button>
+                </div>
+            </div>
+
+            <!-- Toolbar (Search) -->
+            <div class="toolbar-row">
+                <div class="project-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Tìm sản phẩm..." id="project-search-input">
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid-new" id="project-grid">
+                <!-- Content rendered by JS -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Content rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="info" class="team section-with-banner">
+        <div class="container">
+            <h2 class="section-title">Thông <span>tin</span></h2>
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="team-card">
+                    <img src="assets_member_team/TDevelopment.jpg" alt="Nguyễn Trí">
+                    <div class="member-info">
+                        <div class="member-name">Nguyễn Trí</div>
+                        <div class="member-role">Founder</div>
+                        <div class="member-role">Developer</div>
+                        <div class="member-role">Desginer</div>
+                        <div class="member-role">Media</div>
+                        <div class="member-role">Streamer</div>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="team-card">
+                    <img src="assets_member_team/Tèo.png" alt="Tommy tèo">
+                    <div class="member-info">
+                        <div class="member-name">Tommy Tèo</div>
+                        <div class="member-role">Developer</div>
+                        <div class="member-role">Streamer</div>
+                    </div>
+                </div>
+                <!-- Member 3 -->
+                <div class="team-card">
+                    <img src="assets_member_team/ZenLong.jpg" alt="ZenLong">
+                    <div class="member-info">
+                        <div class="member-name">ZenLong</div>
+                        <div class="member-role">Developer</div>
+                        <div class="member-role">Support</div>
+                    </div>
+                </div>
+                <!-- Member 4 -->
+                <div class="team-card">
+                    <img src="assets_member_team/Kun.jpg" alt="TF Kun">
+                    <div class="member-info">
+                        <div class="member-name">TF Kun</div>
+                        <div class="member-role">Support</div>
+                        <div class="member-role">Desginer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Stats Section (Contact) -->
+    <section id="contact" class="services-stats section-with-banner">
+        <div class="container">
+            
+            <!-- Service Banner -->
+            <div class="service-banner">
+                <div class="service-content">
+                    <div class="service-header">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div>
+                            <h2>DỊCH VỤ HỢP TÁC & PHÁT TRIỂN</h2>
+                            <p>Nhận thiết kế & phát triển dự án theo yêu cầu — từ server FiveM đến website chuyên nghiệp.</p>
+                        </div>
+                    </div>
+                    <div class="service-list">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Nhận thiết kế & setup server FiveM hoàn chỉnh</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Tối ưu hiệu năng & bảo mật máy chủ</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Cập nhật & bảo trì định kỳ theo yêu cầu</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Phát triển website quản lý, giới thiệu server</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Tùy chỉnh giao diện, logo và hệ thống UI</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Ưu đãi đặc biệt cho đối tác liên hệ trực tiếp</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-cta">
+                    <h3>ƯU ĐÃI HỢP TÁC ĐẶC BIỆT</h3>
+                    <p>Liên hệ qua kênh chính thức để nhận gói khuyến mãi thiết kế & setup.</p>
+                    <a href="#" class="btn-service">LIÊN HỆ HỢP TÁC</a>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <!-- Products -->
+                <div class="stat-item">
+                    <div class="hex-icon blue-hex">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">SẢN PHẨM</span>
+                        <span class="stat-number" id="stat-products">0</span>
+                        <div class="stat-line blue-line"></div>
+                    </div>
+                </div>
+                
+                <!-- License (Year) -->
+                <div class="stat-item">
+                    <div class="hex-icon green-hex">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">BẢN QUYỀN</span>
+                        <span class="stat-number" id="stat-license">Nguyễn Trí</span>
+                        <div class="stat-line green-line"></div>
+                    </div>
+                </div>
+
+                <!-- Members -->
+                <div class="stat-item">
+                    <div class="hex-icon lime-hex">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">THÀNH VIÊN</span>
+                        <span class="stat-number" id="stat-members">0</span>
+                        <div class="stat-line lime-line"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="floating-footer">
+        <div class="footer-pill">
+            <span>&copy; 2025</span>
+            <img src="assets/logo.png" alt="Logo">
+            <span class="footer-brand">T - TEAM STUDIO</span>
+            <span class="footer-dot">•</span>
+            <span class="footer-dev">Phát triển bởi <b>&lt;/&gt; Nguyễn Trí</b></span>
+        </div>
+    </footer>
+
+    <!-- Security Warning Modal -->
+    <div id="warning-modal" class="warning-overlay">
+        <div class="warning-box">
+            <h2 class="warning-title">Phát hiện DevTools!</h2>
+            <p class="warning-desc">Vui lòng đóng Công cụ Dành cho Nhà phát triển để tiếp tục sử dụng website.</p>
+            <p class="warning-count">Lượt phát hiện: <span id="detect-count">0</span>/3</p>
+            <p class="warning-status" id="warning-status"></p>
+            <button class="btn-warning" id="close-warning">Đóng cảnh báo</button>
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-title">Cyberpunk-inspired Male</h2>
+                <div class="header-actions">
+                    <span class="badge-exclusive" id="modal-badge">ĐỘC QUYỀN</span>
+                    <button id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-img-wrapper">
+                    <!-- Background Pattern -->
+                    <div class="bg-pattern"></div>
+                    <img id="modal-image" src="" alt="Project Preview">
+                    
+                    <!-- Floating Actions -->
+                    <div class="floating-actions">
+                        <button class="action-btn blue"><i class="fa-solid fa-check"></i></button>
+                        <button class="action-btn yellow"><i class="fa-solid fa-star"></i></button>
+                        <button class="action-btn dark"><i class="fa-solid fa-rotate"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="footer-info">
+                    <span>Người làm:</span>
+                    <span class="tag-box" id="modal-creator">Znex0</span>
+                </div>
+                <div class="footer-info right">
+                    <span>Chủ sở hữu:</span>
+                    <span class="tag-box" id="modal-owner">Gang Taso</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
