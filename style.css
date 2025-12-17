@@ -1155,118 +1155,6 @@ body.light-mode .nav-links a:hover, body.light-mode .nav-links a.active {
     padding: 0 0 8rem 0; /* Extra bottom padding for floating footer, top padding 0 since it follows team */
 }
 
-/* Service Banner */
-.service-banner {
-    background: linear-gradient(135deg, #3d2010 0%, #5e3215 100%);
-    border: 1px solid #7a4018;
-    border-radius: 20px;
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-}
-
-.service-content {
-    flex: 2;
-}
-
-.service-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.service-icon-box {
-    width: 50px;
-    height: 50px;
-    background: #d35400;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 15px rgba(211, 84, 0, 0.4);
-}
-
-.service-header h2 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.service-header p {
-    color: #dcdcdc;
-    font-size: 1rem;
-}
-
-.service-list {
-    display: flex;
-    gap: 2rem;
-}
-
-.service-list ul {
-    flex: 1;
-}
-
-.service-list li {
-    margin-bottom: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    color: #e0e0e0;
-    font-size: 0.95rem;
-}
-
-.service-list li i {
-    color: #f1c40f;
-}
-
-.service-cta {
-    flex: 1;
-    text-align: center;
-    padding-left: 3rem;
-    border-left: 1px solid rgba(255,255,255,0.1);
-}
-
-.service-cta h3 {
-    color: #f1c40f;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.service-cta p {
-    font-size: 0.9rem;
-    color: #bbb;
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
-}
-
-.btn-service {
-    display: inline-block;
-    background: linear-gradient(to right, #d35400, #e67e22);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-transform: uppercase;
-    box-shadow: 0 4px 15px rgba(211, 84, 0, 0.4);
-    transition: all 0.3s;
-}
-
-.btn-service:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(211, 84, 0, 0.6);
-}
-
 /* Stats Grid */
 .stats-grid {
     display: flex;
@@ -1709,4 +1597,5 @@ body.hovering .corner {
         flex: 1;
     }
 }
+
 
